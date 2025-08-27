@@ -1,188 +1,131 @@
-# Personal Professional Card Astro
+<!-- Banner or Project Logo (optional, add your own image/link) -->
+<p align="center">
+  <img src="https://img.shields.io/badge/itsjatin-Repository-blueviolet?style=for-the-badge" />
+</p>
 
-"Hi there!, I'm Brian. I hope this small template helps you gain visibility while you build great projects. Thank you for using it. I wish you success in everything you set out to do; you will surely achieve great things.
+<h1 align="center">🚀 itsjatin Project 🚦</h1>
 
-You can help me by following me, giving a Star to the template, and sharing it so others can see and use it.
+<p align="center">
+  <strong>Advanced ML, Traffic Flow, Neural Architectures, and More!</strong>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Jatin-Sharma-11/itsjatin?color=brightgreen&label=Stars" />
+  <img src="https://img.shields.io/github/forks/Jatin-Sharma-11/itsjatin?color=orange&label=Forks" />
+  <img src="https://img.shields.io/github/license/Jatin-Sharma-11/itsjatin?color=yellow&label=License" />
+</p>
 
-Have a great day!"
+---
 
+## 📚 Table of Contents
 
-![example page](pageexample.png)
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Author](#author)
+- [License](#license)
 
-![performance web](performance.png)
+---
 
-<hr/>
+## 📝 Overview
 
-<h3 align="center">
- ⭐ Leave a star if you like this project! ⭐️
-</h3>
+`itsjatin` is a collection of **machine learning, deep learning, and traffic prediction experiments** powered by advanced neural network techniques. It covers computer vision, time-series analysis, custom PyTorch layers, and more[8].
 
-## Deploy
+---
 
-[![](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://personal-card-astro.netlify.app/)
+## ✨ Features
 
-## 🚀 Project Structure
+- **Traffic Flow Prediction:** Using graph neural networks and Struct2Vec embeddings
+- **Computer Vision Demos:** Laptop camera face recognition, live audio processing
+- **Custom Neural Blocks:** Implementation of KAN, SNorm, and advanced MLPs
+- **Competitive Programming Utilities:** Ready-to-use code templates
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-public/
-  ├── files/
-  |      └── resume-cv.pdf
-  ├── images/
-  |      └── profile2.webp
-  ├── favicon.ico
-src/
-  ├── components/
-  │     └── Card.astro
-  ├── layouts/
-  │     └── BaseLayout.astro
-  ├── pages/
-  │     └── index.astro
-  ├── styles/
-  │     ├── global.css
-  │     └── card.css
-```
-# User Guide
+## 🛠 Tech Stack
 
-This guide explains how to customize the template for your personal use. In the `src/pages/index.astro`
+- ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+- ![PyTorch](https://img.shields.io/badge/PyTorch-1.13-e34f26?logo=pytorch)
+- ![BasicTS](https://img.shields.io/badge/BasicTS-Framework-green?logo=pandas)
+- ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+- ![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?logo=github)
 
-![example code](code-1.png)
+---
 
-## External Card Customization
+## 🚀 Getting Started
 
-- **`title`**: This change will be reflected in the browser tab.
-- **`description`**: This is a metadata tag used to provide a brief description of your page in search engines.
+git clone https://github.com/Jatin-Sharma-11/itsjatin.git
+cd itsjatin
+python setup.py install
 
-## Internal Card Customization
 
-- **`name`**: Enter your name here.
-- **`position`**: Enter your job position here.
-- **`about me`**: Write a brief description of who you are and what you do. It's recommended to keep it under 540 characters.
-- **`linkedin`** and **`github`**: Enter the URLs to your personal pages here.
-- **`cvLink`**: Provide the URL to your resume in PDF format for download.
-- **`profileImage`**: Upload your professional profile picture here.
+Or open in **Google Colab** for instant exploration!
 
-## File Management
+---
 
-- **Resume**: Place your resume PDF file in the `public/files` folder.
-- **Profile Image**: Place your profile image in the `public/images` folder. It's recommended to use the .webp format for better web performance.
-- **Favicon**: Replace the `public/favicon.ico` file with your own, preferably keeping the same file name.
+## 🤝 Contributing
 
-## Layout Customization
+Contributions, issues, and feature requests are welcome!
+- Fork the repository
+- Create your feature branch (`git checkout -b feat/AmazingFeature`)
+- Commit your changes (`git commit -m 'Add some feature'`)
+- Push to the branch (`git push origin feat/AmazingFeature`)
+- Open a Pull Request
 
-- In the `src/layouts` folder, you will find the `BaseLayout.astro` file. This file contains the complete HTML structure. Here, you will see references to the favicon, Google fonts, and Bootstrap icons.
+---
 
-## Style Customization
+## 👨‍💻 Author
 
-- In the `src/styles` folder, you will find the styles for the Card. You can make visual changes here, such as modifying colors, fonts, sizes, etc.
+| ![Profile Pic](https://avatars.githubusercontent.com/u/your_id?s=80) |
+|:---:|
+| **Jatin Sharma**<br>🚦 ML Researcher 🚦<br>[LinkedIn](https://linkedin.com/in/jatin-sharma) &nbsp; [Twitter](https://twitter.com/itsjatin) |
 
+---
 
-Easy, Right?
+## 📄 License
 
+Distributed under the MIT License.
 
-# Getting Started with Your Template
+---
 
-Follow these steps to initialize and deploy your template using Astro and Netlify.
+<!-- Add more interactive badges, profile stats, and GIFs as desired -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Jatin-Sharma-11&show_icons=true&theme=radical" alt="Jatin Sharma's GitHub stats" />
+</p>
 
-## Prerequisites
 
-Make sure you have the following installed on your machine:
-- [Node.js](https://nodejs.org/) (version 14.x or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- [Astro](https://astro.build/) (installed globally)
 
-## Installation
+Or open in **Google Colab** for instant exploration!
 
-### Option 1: Clone the Template Repository
+---
 
-1. **Clone the Template Repository**
+## 🤝 Contributing
 
-    ```bash
-    https://github.com/alcarazbrian/professional-card-astro.git
-    cd professional-card-astro
-    ```
+Contributions, issues, and feature requests are welcome!
+- Fork the repository
+- Create your feature branch (`git checkout -b feat/AmazingFeature`)
+- Commit your changes (`git commit -m 'Add some feature'`)
+- Push to the branch (`git push origin feat/AmazingFeature`)
+- Open a Pull Request
 
-2. **Install Dependencies**
+---
 
-    ```bash
-    npm install
-    ```
+## 👨‍💻 Author
 
-### Option 2: Download the ZIP File
+| ![Profile Pic](https://avatars.githubusercontent.com/u/your_id?s=80) |
+|:---:|
+| **Jatin Sharma**<br>🚦 ML Researcher 🚦<br>[LinkedIn](https://linkedin.com/in/jatin-sharma) &nbsp; [Twitter](https://twitter.com/itsjatin) |
 
-1. **Download the ZIP File**
+---
 
-    Download the template as a ZIP file from the repository's GitHub page.
+## 📄 License
 
-2. **Extract the ZIP File**
+Distributed under the MIT License.
 
-    Extract the contents of the ZIP file to your desired location.
+---
 
-3. **Navigate to the Project Directory**
-
-    Open your terminal and navigate to the extracted directory.
-
-    ```bash
-    cd path-to-extracted-directory
-    ```
-
-4. **Install Dependencies**
-
-    ```bash
-    npm install
-    ```
-
-## Running the Project Locally
-
-To start the development server, run:
-
-```bash
-npm run dev
-```
-This command will start the Astro development server. You can view your site at http://localhost:4321. Any changes you make to the project files will be reflected in real time in your browser. To stop the development server, press Ctrl+C in the terminal.
-
-## Building the Project
-
-To build the project for production, run:
-
-```bash
-npm run build
-```
-
-## Deploying to Netlify
-
-### Using Netlify Drop
-
-1. **Build the Project**
-
-   Ensure your project is built by running:
-
-   ```bash
-   npm run build
-   ```
-
-2. **Drag and Drop**
-
-   Go to Netlify Drop. Drag and drop the `dist` folder from your project directory into the Netlify Drop area. This will upload and deploy your site.
-
-   Your site should now be live on Netlify. You can view the live site URL in the output of the command or from your Netlify dashboard.
-
-
-## Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-
-## 👀 Want to learn more?
-
-Feel free to check [Astro documentation](https://docs.astro.build) or jump into [Astro Discord server](https://astro.build/chat).
-
-## Contact
-
-[![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alcarazbrian)
+<!-- Add more interactive badges, profile stats, and GIFs as desired -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Jatin-Sharma-11&show_icons=true&theme=radical" alt="Jatin Sharma's GitHub stats" />
+</p>
