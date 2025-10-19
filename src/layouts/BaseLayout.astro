@@ -1,4 +1,6 @@
 ---
+import Nav from "../components/Nav.astro";
+
 //src/layouts/BaseLayout.astro
 const { title = 'Personal Card Astro', description } = Astro.props;
 
@@ -22,6 +24,7 @@ import '../styles/global.css';
     <title>{title}</title>
   </head>
   <body>
+ <Nav />
     <main>
       <slot />
     </main>
