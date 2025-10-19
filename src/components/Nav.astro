@@ -1,27 +1,28 @@
 ---
-import "../styles/nav.css";
+// src/components/Nav.astro
+import { useState } from 'preact/hooks';
 ---
 
 <nav class="navbar">
-  <div class="logo">Jatin Sharma</div>
+  <div class="logo">
+    <a href="/">🏠</a>
+  </div>
 
-  <div class="menu-toggle" id="mobile-menu">
+  <div class="menu-toggle" onClick={() => setOpen(!open)}>
     <i class="bi bi-list"></i>
   </div>
 
-  <div class="nav-links" id="nav-links">
+  <div class={`nav-links ${open ? 'active' : ''}`}>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/blogs">Blogs</a>
     <a href="/projects">Projects</a>
+    <a href="/photos">Photos</a>
     <a href="/contact">Contact</a>
   </div>
 </nav>
 
-<script>
-  const menu = document.getElementById('mobile-menu');
-  const links = document.getElementById('nav-links');
-  menu.addEventListener('click', () => {
-    links.classList.toggle('active');
-  });
+<script type="module" is:inline>
+  import { useState } from 'https://cdn.jsdelivr.net/npm/preact@10.16.1/hooks/dist/hooks.module.js';
+  const [open, setOpen] = useState(false);
 </script>
