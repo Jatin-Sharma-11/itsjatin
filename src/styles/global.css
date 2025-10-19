@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.blog-list {
+  color: #fff; /* all text inside white */
+}
+
+.blog-list a {
+  color: #00ffc3; /* link color */
+  text-decoration: none;
+}
+
+.blog-list a:hover {
+  text-decoration: underline;
+}
+
+.blog-list p {
+  color: #ddd; /* lighter grey for date/description */
+}
