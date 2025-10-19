@@ -1,1 +1,21 @@
 
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const post = {
+  title: "Understanding Kolmogorov-Arnold Networks (KANs)",
+  date: "October 20, 2025",
+  description: "A deep dive into KANs and their application in traffic prediction models.",
+};
+---
+
+<BaseLayout title={post.title} description={post.description}>
+  <article style="max-width: 700px; margin: auto; padding: 2rem; color: #fff;">
+    <h1>{post.title}</h1>
+    <p><em>{post.date}</em></p>
+    <p>
+      Kolmogorov–Arnold Networks (KANs) are a new class of models that combine the interpretability of
+      classical functions with the flexibility of neural networks...
+    </p>
+  </article>
+</BaseLayout>
