@@ -1,1 +1,36 @@
 
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const blogs = [
+  {
+    title: "Understanding Kolmogorov-Arnold Networks (KANs)",
+    link: "/blogs/blog1",
+    date: "October 20, 2025",
+    description: "A deep dive into KANs and their application in traffic prediction models.",
+  },
+  {
+    title: "Optimizing Spatiotemporal Graph Neural Networks",
+    link: "/blogs/blog2",
+    date: "October 22, 2025",
+    description: "How residual attention helps improve temporal consistency in traffic flow models.",
+  },
+];
+---
+
+<BaseLayout title="Jatin Sharma | Blogs" description="My technical writings and research insights.">
+  <section style="max-width: 800px; margin: auto; padding: 2rem; color: #fff;">
+    <h1 style="text-align:center;">🧠 Blogs by Jatin Sharma</h1>
+    <ul style="list-style:none; padding:0;">
+      {blogs.map(blog => (
+        <li style="margin: 1.5rem 0; padding: 1rem; background:#0f2027; border-radius:10px;">
+          <a href={blog.link} style="color:#00ffc3; text-decoration:none; font-size:1.2rem;">
+            {blog.title}
+          </a>
+          <p style="color:#bbb; margin:0.3rem 0;">{blog.date}</p>
+          <p style="color:#ddd;">{blog.description}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
