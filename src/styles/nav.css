@@ -1,13 +1,13 @@
-/* NAVIGATION BAR */
+/* NAVBAR */
 .navbar {
   width: 100%;
   background: linear-gradient(to right, #024945, #12a89c);
-  color: #ffffff;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 12px 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   font-family: 'Lato', sans-serif;
   position: sticky;
   top: 0;
@@ -15,17 +15,14 @@
 }
 
 /* LOGO */
-.navbar .logo {
+.navbar .logo a {
   font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
-
-.navbar .logo:hover {
-  transform: scale(1.05);
-}
+.navbar .logo a:hover { transform: scale(1.1); }
 
 /* NAV LINKS */
 .navbar .nav-links {
@@ -34,7 +31,7 @@
 }
 
 .navbar .nav-links a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
@@ -50,38 +47,32 @@
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   transition: width 0.3s;
 }
-
-.navbar .nav-links a:hover::after {
-  width: 100%;
-}
-
-.navbar .nav-links a:hover {
-  transform: translateY(-2px);
-}
+.navbar .nav-links a:hover::after { width: 100%; }
+.navbar .nav-links a:hover { transform: translateY(-2px); }
 
 /* MOBILE MENU */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: #ffffff;
+  color: #fff;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .navbar {
-    padding: 15px 25px;
+    padding: 12px 25px;
   }
 
   .nav-links {
     position: absolute;
-    top: 65px;
+    top: 60px;
     left: 0;
     width: 100%;
-    background: linear-gradient(#12a89c, #024945);
+    background: linear-gradient(to bottom, #12a89c, #024945);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -89,23 +80,11 @@
     padding: 20px 0;
   }
 
-  .nav-links.active {
-    display: flex;
-  }
+  .nav-links.active { display: flex; }
 
-  .menu-toggle {
-    display: block;
-  }
+  .menu-toggle { display: block; }
 }
 
-/* ICON HOVER EFFECTS */
-.navbar i {
-  margin-right: 8px;
-  font-size: 18px;
-  vertical-align: middle;
-  transition: transform 0.3s;
-}
-
-.navbar a:hover i {
-  transform: scale(1.1);
-}
+/* ICON HOVER */
+.navbar i { transition: transform 0.3s; }
+.navbar a:hover i { transform: scale(1.1); }
