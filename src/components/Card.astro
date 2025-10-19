@@ -1,39 +1,102 @@
 ---
-//src/components/Card.astro
-const {name, position, aboutMe, linkedin, github, cvLink, profileImage } = Astro.props;
+const { 
+  name, 
+  position, 
+  aboutMe, 
+  linkedin, 
+  github, 
+  cvLink, 
+  profileImage,
+  leetcode,
+  codechef,
+  codeforces,
+  hackerrank,
+  instagram
+} = Astro.props;
 
 import '../styles/card.css';
 ---
 
 <div class="container">
-    <div class="card-container">
-        <div class="descripcion">
-            <h1>{name}</h1>
-            <h2>{position}</h2>
-            <p>{aboutMe}</p>
-            <div class="icons">
-                <a href={linkedin} class="hover-text" target="_blank">
-                    <span class="tooltip-text" id="fade">
-                        LinkedIn
-                    </span>
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href={github} class="hover-text" target="_blank">
-                    <span class="tooltip-text" id="fade">
-                        GitHub
-                    </span>
-                    <i class="bi bi-github"></i>
-                </a>
-                <a href={cvLink} class="hover-text" target="_blank">
-                    <span class="tooltip-text" id="fade">
-                        Resume
-                    </span>
-                    <i class="bi bi-file-earmark-arrow-down"></i>
-                </a>
-            </div>
-        </div>
-        <div class="image">
-            <img src={profileImage} alt="">
-        </div>
+  <div class="card-container">
+    <div class="descripcion">
+      <h1>{name}</h1>
+      <h2>{position}</h2>
+      <p>{aboutMe}</p>
+
+      <div class="icons">
+        <!-- LinkedIn -->
+        <a href={linkedin} class="hover-text" target="_blank">
+          <span class="tooltip-text" id="fade">LinkedIn</span>
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href={github} class="hover-text" target="_blank">
+          <span class="tooltip-text" id="fade">GitHub</span>
+          <i class="bi bi-github"></i>
+        </a>
+
+        <!-- Resume -->
+        <a href={cvLink} class="hover-text" target="_blank">
+          <span class="tooltip-text" id="fade">Resume</span>
+          <i class="bi bi-file-earmark-arrow-down"></i>
+        </a>
+
+        <!-- LeetCode -->
+        {leetcode && (
+          <a href={leetcode} class="hover-text" target="_blank">
+            <span class="tooltip-text" id="fade">LeetCode</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="20" height="20" fill="currentColor">
+              <path d="M640 192L384 448l256 256-64 64L320 448l256-256z"/><path d="M832 512a320 320 0 11-640 0 320 320 0 01640 0zm-96 0a224 224 0 10-448 0 224 224 0 00448 0z"/>
+            </svg>
+          </a>
+        )}
+
+        <!-- CodeChef -->
+        {codechef && (
+          <a href={codechef} class="hover-text" target="_blank">
+            <span class="tooltip-text" id="fade">CodeChef</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" fill="currentColor">
+              <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zM14 30v-2h4v2h-4zm16 0v-2h4v2h-4z"/>
+            </svg>
+          </a>
+        )}
+
+        <!-- CodeForces -->
+        {codeforces && (
+          <a href={codeforces} class="hover-text" target="_blank">
+            <span class="tooltip-text" id="fade">CodeForces</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" fill="currentColor">
+              <rect x="8" y="10" width="6" height="28" fill="#4285F4"/>
+              <rect x="21" y="4" width="6" height="34" fill="#34A853"/>
+              <rect x="34" y="16" width="6" height="22" fill="#FBBC05"/>
+            </svg>
+          </a>
+        )}
+
+        <!-- HackerRank -->
+        {hackerrank && (
+          <a href={hackerrank} class="hover-text" target="_blank">
+            <span class="tooltip-text" id="fade">HackerRank</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20" fill="#1ba94c">
+              <path d="M24 4L8 14v20l16 10 16-10V14L24 4zm2 29h-4V15h4v18z"/>
+            </svg>
+          </a>
+        )}
+
+        <!-- Instagram -->
+        {instagram && (
+          <a href={instagram} class="hover-text" target="_blank">
+            <span class="tooltip-text" id="fade">Instagram</span>
+            <i class="bi bi-instagram"></i>
+          </a>
+        )}
+      </div>
     </div>
+
+    <div class="image">
+      <img src={profileImage} alt="">
+    </div>
+  </div>
 </div>
