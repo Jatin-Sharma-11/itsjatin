@@ -1,5 +1,8 @@
 ---
-import Nav from "../components/Nav.astro";
+import Nav from '../components/Nav.astro';
+---
+
+<Nav client:load /> <!-- hydrate only in browser -->
 
 //src/layouts/BaseLayout.astro
 const { title = 'Personal Card Astro', description } = Astro.props;
