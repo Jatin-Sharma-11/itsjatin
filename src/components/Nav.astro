@@ -1,11 +1,26 @@
 ---
-import '../styles/nav.css';
+import "../styles/nav.css";
 ---
 
-<nav class="nav">
-  <a href="/">Home</a>
-  <a href="/home">Profile</a>
-  <a href="/about">About</a>
-  <a href="/blogs">Blogs</a>
-  <a href="/photos">Photos</a>
+<nav class="navbar">
+  <div class="logo">Jatin Sharma</div>
+
+  <div class="menu-toggle" id="mobile-menu">
+    <i class="bi bi-list"></i>
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="/">Home</a>
+    <a href="/#projects">Projects</a>
+    <a href="/#about">About</a>
+    <a href="/#contact">Contact</a>
+  </div>
 </nav>
+
+<script>
+  const menu = document.getElementById('mobile-menu');
+  const links = document.getElementById('nav-links');
+  menu.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+</script>
